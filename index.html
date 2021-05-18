@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AEOS</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- PHASER -->
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- LANDING SCREEN -->
+  <div class="screen-landing" id="screenLanding">
+    <div class="container">
+      <header id="header">
+        <div class="title">
+          <h1>WELCOME TO AEOS</h1>
+        </div>
+        <div class="play">
+          <button type="button" class="playBtn" id="playBtn">
+            <h2>PLAY</h2>
+          </button>
+        </div>
+      </header>
+      <div class="created-by">
+        <p><small>A game created by Adel, Elodie, Olivier & Stephanie.</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHOOSE PLAYER SCREEN -->
+  <div class="screen-choose-player" id="screenChoosePlayer">
+    <div class="container">
+      <div class="menu-title">
+        <h2>CHOOSE A PLAYER</h2>
+      </div>
+      <div class="players d-flex">
+        <div class="player manRed" id="manRed">
+          <img src="assets/characters/mains/spriteRedMan-front.png" alt="">
+        </div>
+        <div class="player girlRed" id="girlRed">
+          <img src="assets/characters/mains/spriteRedGirl-front.png" alt="">
+        </div>
+        <div class="player manScar" id="manScar">
+          <img src="assets/characters/mains/spriteScarringMan-front.png" alt="">
+        </div>
+        <div class="player girlGreen" id="girlGreen">
+          <img src="assets/characters/mains/spriteGreenGirl-front.png" alt="">
+        </div>
+      </div>
+
+      <div class="start">
+        <button type="button" class="start-btn" id="startBtn">
+          <h5>START</h5>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAMEPLAY SCREEN // TO DO -->
+  <div id="screenGame">
+    <div id="game"></div>
+  </div>
+
+</body>
+<script src="js/preload.js"></script>
+<script src="js/create.js"></script>
+<script src="js/update.js"></script>
+<script src="js/config.js"></script>
+<script src="js/choixperso.js"></script>
+
+</html>

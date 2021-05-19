@@ -1,15 +1,39 @@
 // SCREENS
 let screenLanding = document.getElementById('screenLanding');
+let screenIntroText = document.getElementById('screenIntroText');
 let screenChoosePlayer = document.getElementById('screenChoosePlayer');
-let screenGame = document.getElementById('screenGame')
+let screenGame = document.getElementById('screenGame');
+let game = 0;
 
+// BUTTONS LANDING -> INTRO TEXT -> START GAME
 let playBtn = document.getElementById('playBtn');
+let nextBtn = document.getElementById('nextBtn');
 let startBtn = document.getElementById('startBtn');
+
+screenChoosePlayer.style.display = 'none';
+screenIntroText.style.display = 'none';
 
 // LANDING BUTTON
 playBtn.addEventListener('click', function() {
   screenLanding.style.display = 'none';
+  screenChoosePlayer.style.display = 'none';
+  screenIntroText.style.display = 'block';
+});
+
+// AFTER INTRO TEXT - NEXT BUTTON
+nextBtn.addEventListener('click', function() {
+  screenLanding.style.display = 'none';
+  screenIntroText.style.display = 'none';
   screenChoosePlayer.style.display = 'block';
+});
+
+// START GAME BUTTON
+startBtn.addEventListener('click', function() {
+  screenLanding.style.display = 'none';
+  screenIntroText.style.display = 'none';
+  screenChoosePlayer.style.display = 'none';
+  // TO DO --> CONDITIONNELS
+  game = new Phaser.Game(config);
 });
 
 

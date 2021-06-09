@@ -1,8 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 body, html {
+  background-color: #141316;
   font-family: 'Ubuntu Mono', monospace;
   margin: 0;
   text-align: center;
@@ -34,7 +31,7 @@ h6 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -52,12 +49,7 @@ a {
   display: flex;
 }
 
-.screen-landing, .screen-choose-player {
-  background-color: #0b082a;
-  height: 100vh;
-}
-
-.title, .menu-title {
+.title, .intro-title, .menu-title {
   color: #f6f6f6;
   padding-bottom: 50px;
   padding-top: 100px;
@@ -65,26 +57,26 @@ a {
 
 /* LANDING SCREEN */
 .playBtn {
-  border: 2px solid #332042;
+  background-image: url('../assets/backgrounds/bg-night.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 225px;
+  color: aqua;
+  text-emphasis-color: radial-gradient(circle, rgba(83,78,168,1) 9%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 99%);
   padding-bottom: 30px;
   padding-top: 30px;
   width: 25%;
 }
 
-.playBtn:hover, .start-btn:hover {
-  transform: scale(1.15);
-  transition: .5s ease;
-}
-
 .created-by {
   color: #f6f6f6;
-  margin-top: 100px;
+  margin-top: 300px;
   text-align: center;
 }
 
 /* CHOOSE PLAYER SCREEN */
-.players {
+/* .players {
   align-items: center;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -102,11 +94,32 @@ a {
 
 .player {
   width: 100%;
-}
+} */
 
-.start-btn {
+.start-btn, .next-btn {
   border: 2px solid #332042;
   margin-top: 50px;
   padding: 0 15px;
-  width: 20%;
+  width: 25%;
+}
+
+.playBtn:hover, .start-btn:hover, .next-btn:hover {
+  transform: scale(1.15);
+  transition: .5s ease;
+}
+
+#game {
+  position: relative;
+}
+
+/* GAME OVER SCREEN */
+#gameOver, #gameEnd {
+  background-color: rgba(10, 10, 10, 0.5);
+  color: rgb(228, 220, 220);
+  font-size: 5rem;
+  padding-bottom: 50px;
+  position: absolute;
+  top: 350px;
+  text-align: center;
+  width: 100%;
 }

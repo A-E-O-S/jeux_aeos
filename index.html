@@ -18,54 +18,49 @@
   <!-- LANDING SCREEN -->
   <div class="screen-landing" id="screenLanding">
     <div class="container">
-      <header id="header">
         <div class="title">
-          <h1>WELCOME TO AEOS</h1>
+          <h1>BIENVENUE A AEOS</h1>
         </div>
         <div class="play">
           <button type="button" class="playBtn" id="playBtn">
             <h2>PLAY</h2>
           </button>
         </div>
-      </header>
       <div class="created-by">
-        <p><small>A game created by Adel, Elodie, Olivier & Stephanie.</small></p>
+        <p>Un jeu crée par Adel, Elodie, Olivier & Stephanie.</p>
       </div>
     </div>
   </div>
 
-  <!-- CHOOSE PLAYER SCREEN -->
-  <div class="screen-choose-player" id="screenChoosePlayer">
+  <!-- INTRO TEXT SCREEN -->
+  <div class="screen-intro-text" id="screenIntroText">
     <div class="container">
-      <div class="menu-title">
-        <h2>CHOOSE A PLAYER</h2>
+      <div class="intro-title">
+        <h2>HISTOIRE</h2>
       </div>
-      <div class="players d-flex">
-        <div class="player manRed" id="manRed">
-          <img src="assets/characters/mains/spriteRedMan-front.png" alt="">
-        </div>
-        <div class="player girlRed" id="girlRed">
-          <img src="assets/characters/mains/spriteRedGirl-front.png" alt="">
-        </div>
-        <div class="player manScar" id="manScar">
-          <img src="assets/characters/mains/spriteScarringMan-front.png" alt="">
-        </div>
-        <div class="player girlGreen" id="girlGreen">
-          <img src="assets/characters/mains/spriteGreenGirl-front.png" alt="">
-        </div>
-      </div>
-
-      <div class="start">
-        <button type="button" class="start-btn" id="startBtn">
-          <h5>START</h5>
+      <div id="displayText" class="display-text"></div>
+      <div class="nextBtn" id="nextBtn">
+        <button type="button" class="next-btn" id="nextBtn">
+          <h5>DEMARRER</h5>
         </button>
       </div>
     </div>
   </div>
 
-  <!-- GAMEPLAY SCREEN // TO DO -->
-  <div id="screenGame">
-    <div id="game"></div>
+  <!-- GAMEPLAY SCREEN  -->
+  <div id="screenGame" class="screen-game">
+    <div id="game">
+        <!-- GAME OVER SCREEN -->
+        <div id="gameOver">
+          <h2>GAME OVER</h2>
+          <p>cliquez pour redémarrer</p>
+        </div>
+        <div id="gameEnd">
+          <h2>FELICITATIONS</h2>
+          <img src="assets/characters/mains/dogandplayer.png" alt="">
+          <p>cliquez pour redémarrer</p>
+        </div>
+    </div>
   </div>
 
 </body>
@@ -74,5 +69,6 @@
 <script src="js/update.js"></script>
 <script src="js/config.js"></script>
 <script src="js/choixperso.js"></script>
+<script src="js/introtext.js"></script>
 
 </html>

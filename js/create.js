@@ -264,7 +264,7 @@ function create() {
     this.tweens.pauseAll();
     this.anims.pauseAll();
     this.sound.pauseAll();
-    this.biteZombie.play();
+    this.die.play();
     // redemarrage de jeu si on click
     this.input.on('pointerup', () => {
       gameOverScreen.style.display = 'none';

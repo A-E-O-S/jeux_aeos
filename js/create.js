@@ -132,7 +132,7 @@ function create() {
     ease: 'Linear',
   });
 
-//Création du Zombie Man qui se déplace
+//Création du  Man qui se déplace
   this.anims.create({
     key: 'ZombieManWalkRight',
     frames:this.anims.generateFrameNumbers('zombieMan', { start: 5, end: 8 }),
@@ -223,8 +223,8 @@ function create() {
   groupeBullets = this.physics.add.group();
 
   // ajout de 8 ennemi espacées de 500 pixels
-  zombies = this.physics.add.group({
-    key: 'zombie',
+  barricadeLg = this.physics.add.group({
+    key: 'barricadeLg',
     repeat: 20,
     setXY: {
       x: 240,
@@ -243,7 +243,7 @@ function create() {
   });
 
   // DEATH
-  this.physics.add.overlap(player, zombies, () => {
+  this.physics.add.overlap(player, barricadeLg, () => {
     gameOverScreen.style.display = 'block';
     this.physics.pause();
     this.tweens.pauseAll();
@@ -331,7 +331,7 @@ function create() {
     })
   });
   // ajout du modèle de collision entre ennemi et plate-formes
-  this.physics.add.collider(zombies, platforms);
+  this.physics.add.collider(barricadeLg, platforms);
   this.physics.add.collider(barricadeSm, platforms);
 
   // fonction déclenchée lorsque uneBalle et un zombie se superposent
@@ -340,7 +340,7 @@ function create() {
     unzombie.destroy();
   }
 
-  this.physics.add.overlap(groupeBullets, zombies, hit, null, this);
+  this.physics.add.overlap(groupeBullets, barricadeLg, hit, null, this);
   this.physics.add.overlap(groupeBullets, barricadeSm, hit, null, this);
 
   this.physics.add.overlap(groupeBullets, zombieMan, hit, null, this);
@@ -356,18 +356,18 @@ function create() {
   zombieFairMan.pointsVie = Phaser.Math.Between(2, 5);
 
   // modification des zombies créées
-  zombies.children.iterate(function(zombieTrouvee) {
-    zombieTrouvee.pointsVie = Phaser.Math.Between(1, 5);
-    zombieTrouvee.y = Phaser.Math.Between(550, 150);
+  barricadeLg.children.iterate(function(barricadeLgTrouvee) {
+    barricadeLgTrouvee.pointsVie = Phaser.Math.Between(1, 5);
+    barricadeLgTrouvee.y = Phaser.Math.Between(550, 150);
   });
   barricadeSm.children.iterate(function(barricadeSmTrouvee) {
     barricadeSmTrouvee.pointsVie = Phaser.Math.Between(1, 5);
     barricadeSmTrouvee.y = Phaser.Math.Between(550, 150);
   });
-  function hit(bullet, zombie) {
-    zombie.pointsVie--;
-    if (zombie.pointsVie == 0) {
-      zombie.destroy();
+  function hit(bullet, barricadeLg) {
+    barricadeLg.pointsVie--;
+    if (barricadeLg.pointsVie == 0) {
+      barricadeLg.destroy();
     }
     bullet.destroy();
   }

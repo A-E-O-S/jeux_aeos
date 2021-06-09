@@ -17,7 +17,7 @@ function preload ()
   this.load.image('dogHouse', 'assets/objects/dog-house.png');
   this.load.image('pawprint', 'assets/objects/pawprint.png');
   this.load.image('tag', 'assets/objects/tag.png');
-  this.load.image('zombie', 'assets/objects/barricade.png');
+  this.load.image('barricadeLg', 'assets/objects/barricade.png');
   this.load.image('barricadeSm', 'assets/objects/barricade-sm.png');
 
   this.load.image('bomb', 'assets/objects/bomb.png');

@@ -36,6 +36,7 @@ function preload ()
   this.load.audio('biteZombie', 'assets/audio/soundZombie.wav');
   this.load.audio('fall', 'assets/audio/fall.wav');
   this.load.audio('dog', 'assets/audio/dog.wav');
+  this.load.audio('die', 'assets/audio/die.wav');
   this.load.audio('win', 'assets/audio/win.mp3');
   //Chargement musique de fond
   this.load.audio('backgroundMusic', 'assets/audio/8bit-adventure.ogg');

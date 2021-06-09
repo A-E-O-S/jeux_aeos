@@ -1,4 +1,4 @@
-var letexte = 'En 2071, alors que la paix régnait dans le royaume d’AEOS, une étrange maladie fit son apparition. Celle-ci dévasta le royaume et le peuple commença à se transformer en maléfiques créatures, dépourvues de sentiment et assoiffées par le sang. C’est à ce moment là que nomdupersonnage, perda son fidèle compagnon nomchien…Pars à la conquête du pays dans l’espoir de retrouver ton ami, mais gare aux zombies qui pourraient se trouver sur ton chemin….';
+var letexte = 'En 2071, alors que la paix régnait dans le royaume d’AEOS, une étrange maladie fit son apparition. Celle-ci dévasta le royaume et le peuple commença à se transformer en maléfiques créatures, dépourvues de sentiment et assoiffées par le sang. C’est à ce moment là que Iso, perda son fidèle compagnon Shadow…Pars à la conquête du pays dans l’espoir de retrouver ton ami, mais gare aux zombies qui pourraient se trouver sur ton chemin….';
 
 var cmpt = 0;
 

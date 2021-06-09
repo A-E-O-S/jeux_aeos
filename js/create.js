@@ -68,6 +68,7 @@ function create() {
   this.fall= this.sound.add('fall');
   this.dog= this.sound.add('dog');
   this.win= this.sound.add('win');
+  this.die= this.sound.add('die');
 
   // PLAYER CONFIGURATION
   player = this.physics.add.sprite(65, 770, 'dude');
@@ -249,7 +250,7 @@ function create() {
     this.tweens.pauseAll();
     this.anims.pauseAll();
     this.sound.pauseAll();
-    this.biteZombie.play();
+    this.die.play();
     // redemarrage de jeu si on click
     this.input.on('pointerup', () => {
       gameOverScreen.style.display = 'none';

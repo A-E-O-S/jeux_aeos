@@ -17,7 +17,7 @@ var config = {
         preload: preload,
         create: create,
         update: update
-    }
+    },
 };
 
 var player;

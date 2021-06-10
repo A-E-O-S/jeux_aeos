@@ -270,6 +270,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
   this.physics.add.overlap(player, zombieGirl, () => {
@@ -284,6 +285,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
 
@@ -299,6 +301,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
 
@@ -314,6 +317,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
 
@@ -329,6 +333,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
   // ajout du modèle de collision entre ennemi et plate-formes
@@ -426,7 +431,7 @@ function create() {
 
   //  The score
   
- scoreText = this.add.text(16, 16, 'Score: 0/5', {
+ scoreText = this.add.text(16, 16, 'Items: 0/5', {
     fontSize: '32px',
     fill: '#FFF'
   }).setScrollFactor(0); 
@@ -453,7 +458,7 @@ function create() {
   {
     pawprint.disableBody(true, true);
     score += 1;
-    scoreText.setText('Score: ' + score + '/5');   
+    scoreText.setText('Items: ' + score + '/5');   
 
     // CONDITION POUR FAIRE APPARAITRE LE CHIEN SI TOUS OBJETS SONT RAMASSES
     if (pawprints.countActive(true) === 0 && dogBones.countActive(true) === 0 && dogBowls.countActive(true) === 0 && dogHouses.countActive(true) === 0 && tags.countActive(true) === 0)

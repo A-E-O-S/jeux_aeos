@@ -1,4 +1,5 @@
 function update() {
+
   if (cursors.left.isDown) {
     player.setVelocityX(-160);
 
@@ -164,6 +165,7 @@ function update() {
   if (player.y >= 1500) {
     this.sound.pauseAll();
     this.scene.restart();
+    score = 0;
   }
 
 }

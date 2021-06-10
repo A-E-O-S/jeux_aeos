@@ -26,7 +26,7 @@ function preload ()
   // chargement des spritesheet zombie
   this.load.spritesheet("zombieGirl", "assets/characters/zombies/spriteZombieGirlBrown.png", { frameWidth: 42, frameHeight: 48 });
   this.load.spritesheet("zombieMan", "assets/characters/zombies/spriteZombieFairMan.png", { frameWidth: 41, frameHeight: 48 });
-  this.load.spritesheet("zombieRedGirl", "assets/characters/zombies/spriteZombieGirl.png", { frameWidth: 42.9, frameHeight: 48 });
+  this.load.spritesheet("zombieRedGirl", "assets/characters/zombies/spriteZombieGirl.png", { frameWidth: 42.99, frameHeight: 48 });
   this.load.spritesheet("zombieFairMan", "assets/characters/zombies/spriteZombieMan.png", { frameWidth: 41, frameHeight: 48 });
   
   //Chargement son mouvements

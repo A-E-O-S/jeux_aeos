@@ -431,7 +431,7 @@ function create() {
 
   //  The score
   
- scoreText = this.add.text(16, 16, 'Items: 0/5', {
+  scoreText = this.add.text(16, 16, 'Items: 0/5', {
     fontSize: '32px',
     fill: '#FFF'
   }).setScrollFactor(0); 

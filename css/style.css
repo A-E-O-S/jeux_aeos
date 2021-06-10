@@ -31,7 +31,8 @@ h6 {
 }
 
 p {
-  font-size: 1.5rem;
+  color:rgb(228, 220, 220);
+  font-size: 1.3rem;
 }
 
 a {
@@ -49,13 +50,22 @@ a {
   display: flex;
 }
 
-.title, .intro-title, .menu-title {
+.title {
   color: #f6f6f6;
   padding-bottom: 50px;
   padding-top: 100px;
 }
 
-/* LANDING SCREEN */
+.play {
+  padding-top: 50px;
+}
+
+.created-by {
+  color: #f6f6f6;
+  margin-top: 100px;
+  text-align: center;
+}
+
 .playBtn {
   background-image: url('../assets/backgrounds/bg-night.png');
   background-position: center;
@@ -69,41 +79,7 @@ a {
   width: 25%;
 }
 
-.created-by {
-  color: #f6f6f6;
-  margin-top: 300px;
-  text-align: center;
-}
-
-/* CHOOSE PLAYER SCREEN */
-/* .players {
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-image: url('../assets/backgrounds/bg-night.png');
-  height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.player:hover {
-  transform: scale(1.15);
-  transition: .5s ease;
-}
-
-.player {
-  width: 100%;
-} */
-
-.start-btn, .next-btn {
-  border: 2px solid #332042;
-  margin-top: 50px;
-  padding: 0 15px;
-  width: 25%;
-}
-
-.playBtn:hover, .start-btn:hover, .next-btn:hover {
+.playBtn:hover {
   transform: scale(1.15);
   transition: .5s ease;
 }

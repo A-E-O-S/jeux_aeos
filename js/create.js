@@ -55,6 +55,7 @@ function create() {
   platforms.create(2770, 600, 'platform-sm').setScale(0.25).refreshBody();
 
   platforms.create(3025, 550, 'platform-island-float').setScale(0.35).refreshBody();
+  platforms.create(3250, 580, 'platform-sm').setScale(0.25).refreshBody();
   // // positionnement de dogBowl
   platforms.create(3400, 640, 'platform-sm').setScale(0.45).refreshBody();
   // // positionnement de DOG
@@ -256,6 +257,7 @@ function create() {
       gameOverScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
   });
   this.physics.add.overlap(player, barricadeSm, () => {
@@ -490,6 +492,7 @@ function create() {
       gameEndScreen.style.display = 'none';
       this.scene.restart();
       this.anims.resumeAll();
+      score = 0;
     })
 
   }

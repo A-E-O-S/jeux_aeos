@@ -110,7 +110,7 @@ function create() {
   //Création du Zombie Girl qui se déplace
   this.anims.create({
     key: 'walkRight',
-    frames:this.anims.generateFrameNumbers('zombieGirl', { start: 5, end: 8 }),
+    frames: this.anims.generateFrameNumbers('zombieGirl', { start: 5, end: 8 }),
     frameRate: 5,
     repeat: -1
   });
